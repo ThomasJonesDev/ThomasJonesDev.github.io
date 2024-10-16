@@ -1,0 +1,176 @@
+/* ORDER OF CSS PROPERTIES*/
+/* Display */
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Manipulation */
+/* Misc */
+
+:root {
+	--navbar-height: 64px;
+	--footer-height: 32px
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
+	padding: 0;
+	margin: 0;
+}
+
+header,
+main,
+footer {
+	margin: 0;
+}
+
+main {
+	background: linear-gradient(145deg, #A9D6E5, #89C2D9, #61A5C2, #468FAF, #2C7DA0, #2A6F97);
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	position: fixed;
+	top: 0;
+
+	width: 100%;
+	padding: 0 16px;
+	align-items: center;
+
+	border-bottom: 1px solid black;
+
+	background-color: #f2e8cf;
+}
+
+section {
+	padding-top: var(--navbar-height);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav-title {
+	justify-content: center;
+}
+
+.nav-list {
+	display: flex;
+	flex-direction: row;
+
+	justify-content: center;
+}
+
+.nav-item {
+	padding: 0 1em;
+	list-style-type: none;
+}
+
+#home {
+	display: flex;
+
+	height: 100vh;
+
+	justify-content: center;
+	align-items: center;
+}
+
+#home-title {
+	text-align: center;
+}
+
+
+#projects {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+#projects-title {
+	width: 100%;
+	text-align: center;
+
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+#contact-body {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#contact-body h1 {
+	text-align: center;
+}
+
+.contact-main {
+	width: 260px;
+}
+
+
+.contact-icon {
+	max-width: 25px;
+	max-height: 25px;
+	margin: 0 16px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+
+	position: fixed;
+	bottom: 0;
+
+	width: 100%;
+
+	background-color: #f2e8cf;
+
+	border-top: 1px solid black;
+}
+
+.footer-menu {
+	display: grid;
+	grid-template-columns: 2;
+	grid-template-rows: 1;
+
+	width: 80%;
+	align-self: center;
+}
+
+.footer-email {
+	grid-column: 1;
+	grid-row: 1;
+
+	align-self: center;
+}
+
+.footer-sm {
+	grid-column: 2;
+	grid-row: 1;
+
+	align-self: center;
+
+	text-decoration: none;
+}
+
+.footer-cc {
+	text-align: center;
+}
